@@ -1,18 +1,69 @@
-body {
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+  body {
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: 'Pretendard-Regular';
+    color: #444444;
     position: relative;
-}
+    height: 1080px;
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fd680e;
+  }
+  
+  a:hover {
+    color: #ff8f4c;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-primary {
+    font-family: "Raleway", sans-serif;
+  }
+
+
+  .navbar {
+    padding : 0px 0px 0px 0px;
+  }
+
+
+
+
+
+
+/**********************************************
+                     start 
+***********************************************/
 
 .con {
     top: 0px;
     left: 0px;
     width: 970px;
-    height: 1080px;
+    height: 100%;
     background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #ffffff 0% 0% no-repeat padding-box;
     opacity: 1;
-    margin-left: 90px !important;
-    margin-right: 90px !important;
-    position: absolute
+    /*margin-left: 90px !important;
+    margin-right: 90px !important;*/
+    margin: auto 90px;
+    /*position: absolute;*/
 }
 
 
@@ -47,14 +98,26 @@ body {
 }
 
 
+/**********************************************
+                     왼쪽박스 
+***********************************************/
+
+
+
 .leftSelect {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
+    /*position: relative;*/
+    /*margin:0px 0px 0px 70px;*/
+    float: left;
+    margin-left: 70px;
+    width: 400px;
+    /*text-align: center;*/
 }
 
 .search {
-    position: absolute;
-    top: 157px;
-    left: 76px;
+    /*position: absolute;*/
+    margin-top: 40px;
+    /*left: 76px;*/
     width: 360px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -73,16 +136,16 @@ body {
 }
 
 .group {
-    position:absolute;
-    top:0px;
-    left:0px;
+    /*position:absolute;*/
+    margin-top:0px;
+    margin-left:0px;
 }
 
 .apt {
-    position: absolute;
-    top: 268px;
-    left: 84px;
-    width: 345px;
+    /*position: absolute;*/
+    margin-top: 25px;
+    /*left: 84px;*/
+    width: 360px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
     background: var(--unnamed-color-d4b2a7) 0% 0% no-repeat padding-box;
@@ -104,11 +167,13 @@ body {
 
 
 .selectBuild {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 353px;
-    left: 84px;
-    width: 155px;
+    margin-top: 25px;
+    display: inline-block;
+    float: left;
+    /*left: 84px;*/
+    width: 160px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
     /* UI Properties */
@@ -122,12 +187,14 @@ body {
 }
 
 .selectBuild2 {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 353px;
-    left: 274px;
-    width: 155px;
-    height: 63px;
+    margin-top: 25px;
+    display: inline-block;
+    margin-left: 40px;
+    /*left: 274px;*/
+    width: 160px;
+    height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
     /* UI Properties */
     border: 3px solid var(--unnamed-color-e7d7c9);
@@ -140,10 +207,10 @@ body {
 }
 
 .typeText {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 468px;
-    left: 84px;
+    margin-top: 55px;
+    /*left: 84px;*/
     width: 80px;
     height: 24px;
 
@@ -159,13 +226,16 @@ body {
     color: #A38F85;
     text-align: center;
     line-height: 55px;
+   
 }
 
 .inner1 {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 505px;
-    left: 76px;
+    display: inline-block;
+    float: left;
+    margin-top:13px;
+    /*left: 76px;*/
     width: 110px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -178,10 +248,11 @@ body {
 }
 
 .inner2 {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 505px;
-    left: 201px;
+    display: inline-block;
+    float: left;
+    margin-top:13px;
     width: 110px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -194,13 +265,13 @@ body {
     text-align: center;
     line-height: 60px;
     font-weight: 600;
+    margin-left: 15px;
 }
 
 .inner3 {
-    position: absolute;
-    /* Layout Properties */
-    top: 505px;
-    left: 326px;
+    display: inline-block;
+    float: left;
+    margin-top:13px;
     width: 110px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -209,11 +280,14 @@ body {
     border: 3px solid #E7D7C9;
     border-radius: 10px;
     opacity: 1;
+    margin-left: 15px;
 }
 
 
 .sido {
-    position: absolute;   
+    /*position: absolute;   */
+    display: inline-block;
+    margin-top: 30px;
     width: 80px;
     height: 30px;
     /* UI Properties */
@@ -225,35 +299,16 @@ body {
     opacity: 1;
     background-color: #D4B2A7;
     border: none;
+    margin-left: 6px;
 }
 
-
-.sido1 {   
-    top: 620px;
-    left: 76px;
-}
-
-.sido2 {   
-    top: 620px;
-    left: 171px;    
-}
-
-.sido3 {   
-    top: 620px;
-    left: 272px;
-}
-
-.sido4 {   
-    top: 620px;
-    left: 367px;
-}
 
 
 .typeText2{
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 712px;
-    left: 84px;
+    margin-top: 40px;
+    /*left: 84px;*/
     width: 80px;
     height: 24px;
     /* UI Properties */
@@ -266,11 +321,11 @@ body {
 }
 
 .range {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
     width: 358px;
-    top: 765px;
-    left: 76px;
+    margin-top: 35px;
+    /*left: 76px;*/
 }
 
 .form-range {
@@ -278,10 +333,10 @@ body {
 }
 
 .typeText3 {
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 942px;
-    left: 76px;
+    margin-top: 60px;
+    /*left: 76px;*/
     width: 60px;
     height: 19px;
     /* UI Properties */
@@ -295,10 +350,10 @@ body {
 }
 
 .searchBtn { 
-    position: absolute;
+    /*position: absolute;*/
     /* Layout Properties */
-    top: 970px;
-    left: 76px;
+    margin-top: 20px;
+    /*left: 76px;*/
     width: 360px;
     height: 60px;
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -309,3 +364,83 @@ body {
     opacity: 1;
    
 }
+
+
+/**********************************************
+                    오른쪽박스
+***********************************************/
+
+
+.toggle {
+    position: absolute;
+    right: 2px;
+    top:80px;
+    opacity: 1;
+}
+
+.toggle:active {
+    opacity: 1;
+}
+
+.right {
+    opacity: 1;
+    /*display: inline-block;*/
+    /*float: right;*/
+    height: 2000px;
+}
+
+
+.rightSelect {
+    margin-left:auto;
+    /*border: 1px solid;*/
+    /*background-color: #A38F85;*/
+    width: 500px;
+    /*overflow-y: scroll;*/
+    padding: 30px 30px 30px 30px;
+}
+
+
+.areaTitle{
+    /*font-size: px;*/
+    text-align: center;
+}
+
+.areaList {
+    /*display: flex;*/
+}
+.list {
+    margin-top: 30px;
+    display: flex;
+}
+
+.list img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.list ul {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list ul>li{
+    list-style: none;
+}
+
+.list ul>li:not(:nth-child(1)) {
+    margin-top: 8px;
+}
+
+
+.map { 
+    width: 1920px;
+    height: 1080px;
+}
+
+
+
+
+
+
